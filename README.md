@@ -20,7 +20,7 @@ I have some parts which HP does not recognize so I needed to turn down the fans 
 
 This script just ssh´s to the remote host with the given username and then you can turn down the fans remote
 
-I´d recommend adding your ssh key to the ilo instead of pasting your thingy for every command or rewrite the ssh command that it itself runs the loop. 
+I´d recommend adding your ssh key to the ilo instead of pasting your password for every command or rewrite the ssh command that it itself runs the loop. 
 
 usage: 
 <code>
