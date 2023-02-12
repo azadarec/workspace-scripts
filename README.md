@@ -7,9 +7,9 @@ It sets a dot every minute to keep the computer unlocked (and show you online in
 (Standard = 180)  
 
 Usage:  
-<code>
+```dosbatch
 .\keep-unlocked.ps1 10  #keeps unlocked for ten minutes 
-</code>
+```
 
 ### ILO Silencer
 [The Silence of the Fans](https://www.reddit.com/r/homelab/comments/hix44v/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/)
@@ -24,16 +24,21 @@ This script just ssh´s to the remote host with the given username and then you 
 I´d recommend adding your ssh key to the ilo instead of pasting your password for every command or rewrite the ssh command that it itself runs the loop. 
 
 Usage:  
-<code>
+```dosbatch
 .\ilosilencer.ps1 remoteHost fanCount fanSpeed
-</code>
+``` 
 
-### Remove Jetty Temp
-I use VScode Community servers to debug my Java Backends with jetty 
-Jetty will create a ton of temporary directories on each startup and does not clean them up properly on termination  
-So this script is looking in the appdata/local/temp dir for directories starting with jetty and deletes them all recursivly 
+### Remove Dev Temp
+Remove development and chrome temp data from the %APPDATA%/local/Temp directory on  
+a windows system
+
 
 Usage:  
-<code>
+```dosbatch
 .\remove-jetty-temp.ps1
-</code>
+```
+
+
+## TODO
+
+[ ] make the directories configurable via cmdline parameter in  
