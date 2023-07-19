@@ -38,7 +38,11 @@ Usage:
 .\remove-jetty-temp.ps1
 ```
 
+### Get Country Codes 
 
-## TODO
-
-[ ] make the directories configurable via cmdline parameter in  
+We had a database with countries in it but the one sending us the data did not add the ISO codes for the countries 
+So I wrote this script to fetch all data from the [Restcountries](https://restcountries.com) API.
+**requirements**: psycopg2, requests
+```bash
+python get_country_codes.py
+```
